@@ -1,0 +1,886 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    background-image: url('images/banner-bg.jpg');
+    background-position: right bottom;
+    background-size: cover;
+    color: #fff;
+    padding-bottom: 70px;
+}
+nav{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 40px;
+   padding: 40px 20px 60px 20px;
+}
+.heading h1{
+    text-transform: uppercase;
+    font-size: 35px;
+}
+nav form input{
+    width: 250px;
+    height: 45px;
+    border-radius: 25px; 
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border: none;
+    color: #fff;
+}
+nav form i{
+    position: relative;
+}
+nav form i::before{
+    content: "\f002";
+    position: absolute;
+    left: -31px;
+    top: -13px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav ul li{
+    padding: 12px 15px;
+    border-radius: 20px;
+}
+nav ul li:first-child{
+    background-color: rgba(255, 255, 255, 0.10);
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.25px;
+} 
+nav ul li a:hover{
+    color: rgba(255, 255, 255,0.7);
+}
+.mobile_menu{
+    display: none;
+}
+.mobile_menu a{
+    color: #fff;
+    font-size: 30px;
+}
+/* CSS applied to the head content */
+.head_content{
+    background-image: url('images/banner-item-01.jpg');
+    padding: 50px 20px 10px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 140px 0 130px;
+    border-radius: 25px;
+}
+.head_info{
+    width: 70%;
+    padding: 0px 150px 70px 0;
+    line-height: 30px;
+}
+.head_info h4{
+    text-transform: uppercase;
+    font-weight: 200;
+    background-color: blueviolet;
+    color: #fff;
+    padding: 15px;
+    border-radius: 30px;
+    width: 35%;
+    margin-bottom: 75px;
+    text-align: center;
+}
+.head_info h1{
+    font-size: 4rem;
+    line-height: 80px;
+    padding-bottom: 40px;
+}
+.head_info p{
+    padding-bottom: 50px;
+}
+.btn1{
+    background: white;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: blueviolet;
+    margin-right: 30px;
+    font-weight: 600;
+}
+.play-btn,span{
+    text-decoration: none;
+    color: #fff;
+}
+.play-btn i{
+    background: white;
+    color: blueviolet;
+    padding: 15px;
+    border-radius: 30px;
+}
+/* CSS applied to services section */
+.education_card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 95px;
+    margin-top: 180px;
+}
+.course_cards{
+    width: 250px;
+    height: auto;
+    background-color: #f1f0fe;
+    position: relative;
+    padding: 67px 30px 30px;
+    line-height: 30px;
+    border-radius: 25px;
+}
+.course_cards h4{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.course_cards p{
+    font-size: 15px;
+    padding-bottom: 40px;
+}
+.course_cards a{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 15px;
+}
+.course_cards:hover img{
+    transform: translateY(-10px);
+    transition: 0.5s ease-in-out;
+}
+.card_imgs{
+    width: 150px;
+    height: auto;
+    padding: 30px;
+    border-radius: 90px;
+    background-color: blueviolet;
+    position: absolute;
+    top: -70px;
+    right: -72px;
+}
+/* CSS applied to about section */
+.about_container{
+    margin: 140px 0 100px 100px;
+    position: relative;
+}
+.about_container::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 84%;
+    height: 100%;
+    background-color: #f1f0fe;
+    content: '';
+    border-top-left-radius: 500px;
+    border-bottom-left-radius: 500px;
+}
+.about_section{
+    display: flex;
+    justify-content: center;
+}
+.about_que{
+    width: 50%;
+    background-color: blueviolet;
+    border-radius: 30px;
+    padding: 80px 30px;
+    margin-top: -40px;
+    margin-bottom: -40px;
+}
+.about_que details{
+    font-weight: 600;
+    background-color: #fff;
+    padding: 15px;
+    margin: 30px;
+    border-radius: 30px;
+}
+.about_info{
+    flex-shrink: 0;
+    width: 40%;
+    padding: 20px 20px 20px 60px;
+    align-self: center;
+}
+.about_info h4{
+    color: #7a6ad8;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.about_info h1{
+    font-size: 45px;
+    padding: 20px 0;
+}
+.about_info p{
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+.about_info a{
+    text-decoration: none;
+    background: white;
+    padding: 14px 20px;
+    border-radius: 40px;
+    color: #7a6ad8;
+    font-weight: bold;
+    font-size: 13px;
+}
+/* CSS applied to courses section */
+.courses_section{
+    text-align: center;
+    margin-top: 140px;
+}
+.course_nav{
+    background-color: #f1f0fe;
+    border-radius: 50px;
+    padding: 20px 50px;
+    margin: 0 auto 70px;
+    max-width: max-content;
+}
+.course_nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+.course_nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+}
+.course_nav ul li a:hover{
+    color: #7a6ad8;
+}
+.course_heading h5{
+    text-transform: uppercase;
+    color: #7a6ad8;
+    font-weight: 700;
+    padding-bottom: 20px;
+}   
+.course_heading h1{
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+.courses_part{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.course1{
+    background-color: #f1f0fe;
+    border-radius: 30px;
+}
+.courses{
+    width: 320px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.courses span{
+    position: absolute;
+    background: #f1f0fe;
+    left: 30px;
+    top: 25px;
+    z-index: 2;
+    color:#7a6ad8;
+    padding: 9px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+.courses img{
+    width: 320px;
+    padding-bottom: 20px;
+    border-radius: 30px 30px 50px 50px;
+}
+.course_info{
+    padding: 0px 17px 20px;
+    text-align: center;
+}
+.course_info h5{
+    color: #7a6ad8;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 200;
+}
+.cut_part{
+    position: absolute;
+    right: -30px;
+    top: -50px;
+    background-color: rgba(122, 106, 216, 0.95);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all .3s;
+}
+.course1:hover .cut_part{
+    transform: scale(1.2);
+}
+.course1:hover h2{
+    color: #7a6ad8;
+    transition: 0.5s ease-in-out;
+}
+.cut_part h6{
+    margin-top: 69px;
+    margin-left: 26px;
+    font-size: 25px;
+    color: #f1f0fe;
+}
+/* CSS applied to learners section */
+.learners_section{
+    position: relative;
+    padding: 100px;
+    margin-top: 60px;
+}
+.learners_section::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 95%;
+    height: 100%;
+    background-color: #7a6ad8;
+    content: '';
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+}
+.stud_part{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 130px;
+    text-align: center;
+}
+.stud_part::after{
+    background-image: url('images/contact-dec-01.png');
+    position: absolute;
+    left: 15%;
+    opacity: 0.5;
+    top: 0;
+    width: 318px;
+    height: 119px;
+    content: '';
+    z-index: 2;
+}
+.happy_learners h2{
+    font-size: 50px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.happy_learners p{
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+/* CSS applied to Design cards */
+.design_cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    text-align: center;
+    margin-top: 200px;
+}
+.d-cards{
+    width: 265px;
+    background-color: #f1f0fe;
+    padding: 100px 50px 30px;
+    position: relative;
+    border-radius: 10%;
+}
+.d-cards img{
+    position: absolute;
+    width: 100%;
+    max-width: 170px;
+    top: -110px;
+    left: 18%;
+    transition: all .5s;
+    border-radius: 50%;
+}
+.card_info h5{
+    color: #7a6ad8;
+    padding-bottom: 18px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.card_info h3{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.card_info i{
+    background: white;
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+    margin: 0 4px;
+    border-radius: 20px;
+    color: rgba(17, 60, 199, 0.74);   
+}
+.d-cards:hover img{
+    transform: translateY(-10px);
+}
+.d-cards i:hover{
+    background-color: #7a6ad8;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+/* CSS applied to testimonial section */
+.testimonials_section{
+    display: flex;
+    position: relative;
+    margin: 100px 0;
+}
+.testimonial{
+    background-color: #7a6ad8;
+    width: 665px;
+    padding: 80px;
+    margin:40px 0 40px 160px;
+    border-radius: 25px;
+    color: #fff;
+    line-height: 30px;
+}
+.testimonial p{
+    font-style: italic;
+    font-size: 17px;
+}
+.test_img{
+    display: flex;
+    margin-top: 30px;
+}
+.info_test{
+    align-self: center;
+    margin-left: 20px;
+}
+.tetimo_info::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 65%;
+    height: 100%;
+    background-color: #f1f0fe;
+    content: '';
+    border-top-left-radius: 500px;
+    border-bottom-left-radius: 500px;
+}
+.tetimo_info{
+    padding: 60px;
+    width: 665px;
+    align-self: center;
+}
+.tetimo_info h5{
+    color: blueviolet;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.tetimo_info h1{
+    font-size: 50px;
+    padding-bottom: 30px
+}
+.tetimo_info p{
+    line-height: 30px;
+}
+/* CSS applied to Events Section */
+.upcome_events{
+    margin: 50px 50px 100px;
+}
+.events_heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.events_heading h5{
+    color: #7a6ad8;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.events_heading h1{
+    font-size: 40px;
+    padding: 20px;
+}
+.events{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 70px;
+}
+.event_img img{
+    border-radius: 25px;
+    width: 240px;
+    margin-top: -25px;
+    margin-bottom: -25px;
+}
+.event_info::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 92%;
+    height: 100%;
+    background-color: #f1f0fe;
+    content: '';
+    border-radius: 40px;
+}
+.event_info ul li{
+    display: inline-block;
+    margin: 0 35px;
+}
+.event_info ul li span{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #7a6ad8;
+    background: white;
+    padding: 13px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+.event_info ul li h3{
+    font-size: 25px;
+    margin-top: 20px;
+}
+.event_info ul li p{
+    font-size: 16px;
+    padding-bottom: 20px
+}
+.event_info ul li h6{
+    color: #7a6ad8;
+    font-size: 17px;
+}
+.event_info a i{
+    background: #7a6ad8;
+    padding: 42px 35px;
+    position: absolute;
+    border-radius: 55px 0 0 55px;
+    right: 0;
+    top: 37px;
+    color: white;
+}
+/* CSS applies to footer Section */
+.footer_section{
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.contact_section{
+    width: 52%;
+    align-self: center;
+    padding: 50px;
+}
+.contact_section h5{
+    color: blueviolet;
+    padding-bottom: 30px;
+}
+.contact_section h1{
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+.courses_section p{
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 17px;
+}
+.contact_info{
+    background: white;
+    padding: 35px;
+    width: 70%;
+    border-radius: 30px;
+    position: relative;
+    margin-top: 40px;
+}
+.contact_info span{
+    position: absolute;
+    background-color: #7a6ad8;
+    padding: 27px 11px;
+    border-radius: 0 40px 40px 0;
+    left: 0px;
+    top: 32px;
+    width: 55px;
+    height: 86px;
+}
+.contact_info h6{
+    font-size: 17px;
+    margin-left: 50px;
+    padding-bottom: 10px;
+}
+.contact_info h4{
+    margin-left: 50px;
+    font-size: 25px;
+}
+.contact_info em{
+    color: #7a6ad8;
+    font-style: normal;
+}
+.contact_info a i{
+    position: absolute;
+    right: 2px;
+    top: 53px;
+    background: #7a6ad8;
+    padding: 15px;
+    color: white;
+    border-radius: 50%;
+}
+.footer_section::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 65%;
+    height: 100%;
+    background-color: #f1f0fe;
+    content: '';
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+}
+.form_section{
+    background: #7a6ad8;
+    width: 43%;
+    padding: 70px;
+    border-radius: 25px;
+    position: relative;
+    align-self: center;
+}
+.form_section input{
+    width: 100%;
+    background-color: rgba(249, 235, 255, 0.15);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+::-webkit-input-placeholder{
+    color: #fff;
+}
+.form_section textarea{
+    background-color: rgba(249, 235, 255, 0.15);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.form_section button{
+    padding: 15px;
+    border-radius: 30px;
+    border: 0;
+    color: #7a6ad8;
+    font-weight: 600;
+}
+.form_section::after{
+    background-image: url('images/contact-dec-01.png');
+    position: absolute;
+    left: 20%;
+    opacity: 0.4;
+    top: 0;
+    width: 318px;
+    height: 119px;
+    content: '';
+    z-index: 2;
+}
+.form_section::before{
+    background-image: url(images/contact-dec-01.png);
+    position: absolute;
+    left: 54%;
+    opacity: 0.4;
+    width: 318px;
+    height: 119px;
+    content: '';
+    z-index: 2;
+    bottom: 0;
+    transform: rotateZ(126deg);
+}
+.footer_part{
+    margin: 50px 0 0;
+    text-align: center;
+    background: #7a6ad8;
+    padding: 60px;
+    border-radius: 100px 100px 0 0;
+    color: #fff;
+    position: relative;
+}
+.footer_part a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer_part::before{
+    background-image: url(images/contact-dec-01.png);
+    position: absolute;
+    left: 30px;
+    opacity: 1;
+    width: 318px;
+    height: 119px;
+    content: '';
+    z-index: 2;
+    bottom: 0;
+    transform: rotateZ(180deg);
+}
+.footer_part::after{
+    background-image: url(images/contact-dec-01.png);
+    position: absolute;
+    right: 40px;
+    opacity: 1;
+    width: 318px;
+    height: 119px;
+    content: '';
+    z-index: 2;
+    top: 0;
+}
+/* Media queries */
+@media (max-width:900px) {
+    nav ul{
+    display: none;
+    }
+    .mobile_menu{
+        display: block;
+    }
+    .head_content {
+        padding: 50px 20px 10px 40px;
+        margin: 0px 60px 0 30px;
+    }
+    .head_info {
+        width: 100%;
+        padding: 0px 10px 70px 0;
+    }
+    .design_cards {
+        gap: 136px;
+    }
+    .event_info ul li {
+        margin: 0 27px;
+        list-style: none;
+    }
+    .testimonial {
+        margin: 40px 0 40px 40px;
+    }
+    .contact_section {
+        padding: 10px;
+    }
+    .contact_info {
+        width: 87%;
+    }
+    .form_section::after {
+        display: none;
+    }
+    .form_section::before {
+       display: none;
+    }
+    .about_container::before{
+        display: none;
+    }
+    .form_section {
+        width: 50%;
+        padding: 35px;
+    }
+}
+@media (max-width:500px) {
+    nav{
+        justify-content: space-between;
+    }
+    #search-bar{
+        display: none;
+    }
+    .head_info{
+        line-height: 22px;
+    }
+    .head_info h4{
+        width: 80%;
+    }
+    .head_info h1 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .btn1{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .course_cards{
+        width: 204px;
+    }
+    .about_container {
+        margin: 140px 10px 100px 10px;
+    }
+    .learners_section {
+        padding: 118px;
+    }
+    .about_section {
+        display: block;
+    }
+    .about_que {
+        width: 100%;
+    }
+    .about_info {
+        width: 100%;
+        margin-top: 50px;
+    }   
+    .testimonials_section{
+        display: block;
+    }
+    .testimonial{
+        width: 90%;
+        margin: 40px 0 40px 20px;
+        padding: 30px;
+    }
+    .tetimo_info{
+        width: 100%;
+    }
+    .tetimo_info::before {
+        display: none;
+    }
+    .footer_section{
+        display: block;
+        padding: 10px;
+    }
+    .form_section {
+        width: 100%; 
+    }
+    .footer_section::before{
+        display: none;
+    }
+    .contact_section{
+        width: 100%;
+    }
+    .contact_info{
+        width: 100%;
+        background-color: #f1f0fe;
+        padding: 20px;
+    }
+    .about_info a{
+        background-color: #7a6ad8;
+        color: #fff;
+    }
+    .event_info a i {
+        top: 200px;
+    }
+    .contact_info span {
+        top: 22px;
+    }
+    .footer_part::after{
+        display: none;
+    }
+    .footer_part{
+        padding: 40px;
+    }
+}
